@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <!-- Style start -->
+       <style>
+       /*-- Header --*/
+           h1{
+                  text-align: center;
+             }
+
+       /* Animation styling part */
+           .linear,.ease,.easein,.easeout,.easeinout
+             {
+                  position: relative;
+                  -webkit-animation-name: part2; /* Safari 4.0 - 8.0 */
+                  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+                  animation-name: part2;
+                  animation-duration: 5s;
+                  animation-iteration-count: infinite;
+
+             }
+       /* Road construction */
+           .road,.road1,.road2,.road3,.road4
+             {
+                  position: fixed;
+                  background-color: grey;
+                  z-index: -1;
+
+             }
+           /* road 1 */
+           .road
+             {
+    
+                  top: 80px;
+                  width: 100%;
+                  height: 50px;
+             }
+           /* road 2 */  
+          .road1
+             {
+                  top: 132px;
+                  width: 100%;
+                  height: 50px;
+             }
+           /* road 3 */  
+          .road2
+             {
+                  top: 186px;
+                  width: 100%;
+                  height: 50px;
+             }
+           /* road 4 */  
+          .road3
+             {
+                  top: 240px;
+                  width: 100%;
+                  height: 50px;
+             }
+           /* road 5 */  
+            .road4
+             {
+                  top: 293px;
+                  width: 100%;
+                  height: 50px;
+             }
+           /* Finishing Line */  
+            .finshline
+             {
+                  position: fixed;
+                  top:80px;
+                  left:500px;
+                  width: 10px;
+                  height:270pX;
+                  z-index: 1;
+                  background-color: green;
+
+             }
+/*  animation timing function */
+.linear {animation-timing-function: linear;}
+.ease {animation-timing-function:ease;}
+.easein {animation-timing-function: ease-in;}
+.easeout {animation-timing-function: ease-out;}
+.easeinout {animation-timing-function: ease-in-out;}
+          /* Image sizing */
+            img
+             {
+              width: 100px;
+              height: 50px
+             }
+
+/* Keyfram for animation*/
+@keyframes part2 {
+    from {left: 0px;}
+    to {left: 500px;}
+}
+}
+</style>
+<!--  Style  end -->
+</head>
+<body>
+
+<h1>**Bicycle Race**</h1>
+
+<!-- Bicycle images -->
+    <div class = "linear"><img  src="bicycle1.jpg" ></div>
+    <div class = "ease"><img  src="bicycle2.jpg" ></div>
+    <div class = "easein"><img src="bicycle3.jpg" ></div>
+    <div class = "easeout"><img  src="bicycle4.jpg" ></div>
+    <div class = "easeinout"><img   src="bicycle5.jpg" ></div>
+<!-- Road -->
+<div class="road"></div>
+<div class="road1"></div>
+<div class="road2"></div>
+<div class="road3"></div>
+<div class="road4"></div>
+<div class="finshline"></div>
+
+</body>
+</html>
